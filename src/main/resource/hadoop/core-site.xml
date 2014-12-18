@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>fs.default.name</name>
+		<value>hdfs://u1:9000</value>
+	</property>
+     <property>
+         <name>hadoop.tmp.dir</name>
+          <value>/home/${user.name}/tmp</value>
+      </property>
+	<!--<property>
+  		<name>fs.trash.interval</name>
+  		<value>10080</value>
+	</property>
+	-->
+	<property>
+		  <name>fs.checkpoint.dir</name>
+ 		 <value>/home/${user.name}/dfs/filesystem/namesecondary</value>
+	</property>
+	<property>
+		<name>io.file.buffer.size</name>
+		<value>131072</value>
+        </property>
+        <!--启用安全认证
+	<property>
+ 		 <name>hadoop.security.authorization</name>
+  		 <value>true</value>
+	</property>
+	<property>
+  		<name>hadoop.security.authentication</name>
+  		<value>kerberos</value>
+	</property>-->
+</configuration>
